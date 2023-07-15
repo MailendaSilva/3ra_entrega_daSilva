@@ -150,9 +150,14 @@ body .main_nosotros {
 /* DESKTOP FIRST */
 @media (max-width: 480px) {
   body .main_home {
+    height: 130vh;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "texto_home texto_home" "imagen_home imagen_home"; }
+  body .texto_footer {
+    height: 70vh; }
+  body .imagen_home {
+    height: 60vh; }
   body .footer {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
