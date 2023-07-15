@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body header {
+  height: auto;
+  background-color: #7998fc; }
+
+body main {
+  height: auto;
+  background-color: #c7dcfa; }
+
+body footer {
+  display: grid;
+  height: 18vh;
+  background-color: #7998fc;
+  display: flex;
+  align-items: center;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "texto_footer  redes_sociales"; }
+  body footer .texto_footer {
+    display: grid;
+    display: flex;
+    grid-area: texto_footer;
+    width: 150vh; }
+  body footer .redes_sociales {
+    display: grid;
+    display: flex;
+    grid-area: redes_sociales;
+    justify-content: space-between;
+    width: 40vh; }
+
+body .main_home {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  grid-template-areas: "texto_home imagen_home"; }
+  body .main_home .texto_home {
+    display: flex;
+    grid-area: texto_home;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: fantasy; }
+  body .main_home .imagen_home {
+    display: flex;
+    grid-area: imagen_home;
+    align-items: center;
+    justify-content: center; }
+
+body .seccion_contacto {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 50vh 25vh;
+  grid-template-areas: "datosformulario mapa" "motivo_contacto mapa"; }
+  body .seccion_contacto .datosformulario {
+    grid-area: datosformulario;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+  body .seccion_contacto .mapa {
+    display: flex;
+    align-items: center;
+    grid-area: mapa; }
+    body .seccion_contacto .mapa:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease; }
+  body .seccion_contacto .motivodecontacto {
+    margin-top: auto;
+    margin-block-end: auto;
+    grid-area: motivo_contacto; }
+
+body .main_novedades {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "novedades calendario"; }
+  body .main_novedades .novedades {
+    display: grid;
+    padding: 1rem;
+    grid-area: novedades;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+  body .main_novedades .calendario {
+    display: grid;
+    grid-area: calendario;
+    align-items: center;
+    justify-content: center; }
+    body .main_novedades .calendario:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease; }
+
+body .main_nosotros {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas: "titulo_nosotros titulo_nosotros" "texto_nosotros foto_nosotros"; }
+  body .main_nosotros #titulo_nosotros {
+    padding: 1rem;
+    display: flex;
+    grid-area: titulo_nosotros;
+    justify-content: center;
+    align-items: center;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+  body .main_nosotros .texto_nosotros {
+    display: flex;
+    padding: 1rem;
+    grid-area: texto_nosotros;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+  body .main_nosotros .foto_nosotros {
+    display: flex;
+    grid-area: foto_nosotros;
+    align-items: center;
+    justify-content: center; }
+    body .main_nosotros .foto_nosotros:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease; }
+
+/* DESKTOP FIRST */
+@media (max-width: 480px) {
+  body .main_home {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "texto_home texto_home" "imagen_home imagen_home"; }
+  body .footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "redes_sociales redes_sociales";
+    justify-content: space-around; }
+    body .footer .texto_footer {
+      display: none; }
+  body .seccion_contacto {
+    height: 140vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 10vh 30vh 60vh;
+    grid-template-areas: "datosformulario " "datosformulario " "motivo_contacto" "mapa"; }
+    body .seccion_contacto .mapa {
+      display: flex;
+      justify-content: center; }
+    body .seccion_contacto .motivodecontacto {
+      display: flex;
+      grid-area: motivo_contacto; }
+  body .main_novedades {
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85vh 45vh;
+    grid-template-areas: "novedades" "calendario"; }
+  body .main_nosotros {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: "titulo_nosotros titulo_nosotros" "texto_nosotros texto_nosotros" "foto_nosotros foto_nosotros"; }
+  body .menu_galeria {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  body .seccion_contacto {
+    height: 140vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 10vh 30vh 60vh;
+    grid-template-areas: "datosformulario " "datosformulario " "motivo_contacto" "mapa"; }
+    body .seccion_contacto .mapa {
+      display: flex;
+      justify-content: center; }
+    body .seccion_contacto .motivodecontacto {
+      display: flex;
+      grid-area: motivo_contacto; }
+  body .main_novedades {
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85vh 45vh;
+    grid-template-areas: "novedades" "calendario"; } }
