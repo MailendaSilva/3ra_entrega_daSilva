@@ -45,6 +45,25 @@ body .main_home {
     align-items: center;
     flex-direction: column;
     font-family: fantasy; }
+    body .main_home .texto_home h1 {
+      font-size: 50px;
+      background: linear-gradient(#1497be, #1c3036);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: text 5s linear infinite; }
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+    body .main_home .texto_home h2 {
+      font-size: 40px;
+      background: linear-gradient(#181b1b, #1d495e);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text; }
   body .main_home .imagen_home {
     display: flex;
     grid-area: imagen_home;
@@ -104,7 +123,14 @@ body .main_nosotros {
     grid-area: titulo_nosotros;
     justify-content: center;
     align-items: center;
-    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+    animation: movimientotitulos 2s 1; }
+
+@keyframes movimientotitulos {
+  from {
+    transform: translateX(-250px); }
+  to {
+    transform: translateX(0px); } }
   body .main_nosotros .texto_nosotros {
     display: flex;
     padding: 1rem;
