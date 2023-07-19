@@ -161,60 +161,6 @@ body .main_nosotros {
       transform: scale(1.2);
       transition: transform 0.3s ease; }
 
-/* DESKTOP FIRST */
-@media (max-width: 480px) {
-  body .main_home {
-    height: 130vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "texto_home texto_home" "imagen_home imagen_home"; }
-  body .footer {
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas: "redes_sociales redes_sociales";
-    justify-content: space-around; }
-    body .footer .texto_footer {
-      display: none; }
-  body .seccion_contacto {
-    height: 180vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60vh 60vh 60vh;
-    grid-template-areas: "datosformulario " "motivodecontacto" "mapa"; }
-    body .seccion_contacto .datosformulario {
-      justify-content: center; }
-    body .seccion_contacto .mapa {
-      display: flex;
-      justify-content: center; }
-    body .seccion_contacto .motivodecontacto {
-      margin-top: auto;
-      margin-block-end: auto;
-      grid-area: motivodecontacto; }
-  body .main_novedades {
-    height: 200vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 160vh 40vh;
-    grid-template-areas: "novedades" "calendario"; }
-  body .main_nosotros {
-    height: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: 0.2fr 1fr 1fr;
-    grid-template-areas: "titulo_nosotros titulo_nosotros" "texto_nosotros texto_nosotros" "foto_nosotros foto_nosotros"; }
-  body .menu_galeria {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center; } }
-
-@media (max-width: 320px) {
-  .seccion_contacto {
-    grid-template-columns: 100%;
-    grid-template-rows: 60vh 60vh 60vh;
-    grid-template-areas: "datosformulario " "motivodecontacto" "motivodecontacto"; }
-    .seccion_contacto .mapa {
-      display: none; } }
-
 @media (max-width: 768px) {
   body .seccion_contacto {
     height: 140vh;
@@ -234,3 +180,49 @@ body .main_nosotros {
     grid-template-columns: 100%;
     grid-template-rows: 85vh 45vh;
     grid-template-areas: "novedades" "calendario"; } }
+
+/* DESKTOP FIRST */
+@media (max-width: 480px) {
+  body .main_home {
+    height: 130vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "texto_home texto_home" "imagen_home imagen_home"; }
+  body .footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "redes_sociales redes_sociales";
+    justify-content: space-around; }
+    body .footer .texto_footer {
+      display: none; }
+  body .seccion_contacto {
+    height: 140vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh 40vh 60vh;
+    grid-template-areas: "datosformulario " "motivodecontacto" "mapa"; }
+    body .seccion_contacto .datosformulario {
+      justify-content: center; }
+    body .seccion_contacto .mapa {
+      display: flex;
+      justify-content: center; }
+    body .seccion_contacto .motivodecontacto {
+      margin-top: auto;
+      margin-block-end: auto;
+      grid-area: motivodecontacto; }
+  body .main_novedades {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh 40vh;
+    grid-template-areas: "novedades" "calendario"; }
+  body .main_nosotros {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: "titulo_nosotros titulo_nosotros" "texto_nosotros texto_nosotros" "foto_nosotros foto_nosotros"; }
+  body .menu_galeria {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; } }
