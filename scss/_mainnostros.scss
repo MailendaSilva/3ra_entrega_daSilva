@@ -1,0 +1,53 @@
+body
+{
+    .main_nosotros
+    {
+        height: 75vh;
+        display:grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 0.2fr 1fr;
+        grid-template-areas:
+            "titulo_nosotros titulo_nosotros"
+            "texto_nosotros foto_nosotros";
+        #titulo_nosotros
+        {
+            padding: 1rem;
+            grid-area: titulo_nosotros;
+            @include estilos_centrados;
+            font-family: $textos;
+            animation: movimientotitulos 2s 1;
+        }
+        @keyframes movimientotitulos {
+            from
+            {
+                transform: translateX(-250px);
+            }
+            to 
+            {
+                transform: translateX(0px);
+            }
+            
+        }
+
+        .texto_nosotros
+        {
+            display:flex;
+            padding: 1rem;
+            grid-area: texto_nosotros;
+            flex-direction: column;
+            justify-content: center;
+            font-family: $textos;
+
+        }
+        .foto_nosotros
+        {
+            @include estilos_centrados;
+            grid-area: foto_nosotros;
+            &:hover
+            {
+                transform: scale(1.2);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+}

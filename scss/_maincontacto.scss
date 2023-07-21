@@ -1,0 +1,28 @@
+body
+{
+    .seccion_contacto
+    {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 50vh 25vh;
+        grid-template-areas:
+            "datosformulario mapa"
+            "motivodecontacto mapa";
+        .datosformulario
+        {
+            grid-area: datosformulario;
+            font-family: $textos;
+        }
+        .mapa
+        {
+            @include estilos_centrados;
+            grid-area: mapa;
+            &:hover
+            {
+                transform: scale(1.1);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+}

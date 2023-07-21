@@ -1,0 +1,42 @@
+// MODULA VISTA TABLET 768
+@media (max-width:1200px) {}
+@media (max-width:768px)
+{
+    body
+    {
+         // CONTACTO TABLET
+         .seccion_contacto
+         {
+             height: 140vh;
+             display: grid;
+             grid-template-columns: 100%;
+             grid-template-rows: 30vh 10vh 30vh 60vh;
+             grid-template-areas:
+                 "datosformulario "
+                 "datosformulario "
+                 "motivo_contacto"
+                 "mapa";
+             .mapa
+             {
+                 display:flex;
+                 justify-content: center;
+             }
+             .motivodecontacto
+             {
+                 display:flex;
+                 grid-area: motivo_contacto;
+             } 
+         }
+         // TABLET NOVEDADES
+         .main_novedades
+         {
+             height: 130vh;
+             display:grid;
+             grid-template-columns: 100%;
+             grid-template-rows: 85vh 45vh;
+             grid-template-areas:
+                 "novedades"
+                 "calendario";
+         }
+    }
+}
