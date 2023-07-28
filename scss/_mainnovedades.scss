@@ -12,16 +12,33 @@ body {
             padding: 1rem;
             grid-area: novedades;
             font-family: $textos;
+            font-size: 20px;
         }
 
         .calendario {
+            background-image: url("../images/novedades_sanmartin.png");
+            background-position: center center;
             display: grid;
             grid-area: calendario;
-            @include estilos_centrados;
-            &:hover
+            .titulo_calendario
             {
-                transform: scale(1.1);
-                transition: transform 0.3s ease;
+                font-family: $textos;
+                @include estilos_centrados;
+                font-weight: bold;
+            }
+            li
+            {
+                font-weight: bold;
+            }
+            ol {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                list-style: none;
+                padding: 0;
+              }
+              .first-day
+            {
+                grid-column-start: 2
             }
         }
 

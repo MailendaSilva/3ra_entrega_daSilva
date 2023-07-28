@@ -65,10 +65,10 @@
         // MOBILE NOVEDADES
         .main_novedades
         {
-            height: 150vh;
+            height: 210vh;
             display:grid;
             grid-template-columns: 100%;
-            grid-template-rows: 100vh 40vh;
+            grid-template-rows: 170vh 40vh;
             grid-template-areas:
                 "novedades"
                 "calendario";
