@@ -52,7 +52,18 @@ body
         {
             @include estilos_centrados;
             grid-area: imagen_home;
-            
+            animation: spin 5s linear;
         }
+        @keyframes spin 
+        {
+            0%{
+                transform: rotate(0deg); 
+            }
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+
+        
     }
 }
