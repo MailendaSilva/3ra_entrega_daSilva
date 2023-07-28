@@ -1,9 +1,12 @@
 body {
   margin: 0;
   padding: 0; }
+  body .navbar-nav .nav-item .nav-link {
+    color: #FFFFFF; }
   body header {
     height: auto;
-    background-color: #5a67a8; }
+    background-color: #5a67a8;
+    color: white; }
     body header .navbar-nav li a:hover {
       background-color: #00b7ff; }
   body main {
@@ -24,7 +27,8 @@ body {
       display: grid;
       display: flex;
       grid-area: texto_footer;
-      width: 150vh; }
+      width: 150vh;
+      color: white; }
     body footer .redes_sociales {
       display: grid;
       display: flex;
