@@ -4,8 +4,8 @@ body
     {
         height: 75vh;
         display:grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 0.2fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 90%;
         grid-template-areas:
             "titulo_nosotros titulo_nosotros"
             "texto_nosotros foto_nosotros";
@@ -37,6 +37,10 @@ body
             flex-direction: column;
             justify-content: center;
             font-family: $textos;
+            p
+            {
+                font-size: 25px;
+            }
 
         }
         .foto_nosotros

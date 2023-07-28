@@ -153,8 +153,8 @@ body .main_novedades {
 body .main_nosotros {
   height: 75vh;
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
   grid-template-areas: "titulo_nosotros titulo_nosotros" "texto_nosotros foto_nosotros"; }
   body .main_nosotros #titulo_nosotros {
     padding: 1rem;
@@ -177,6 +177,8 @@ body .main_nosotros {
     flex-direction: column;
     justify-content: center;
     font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; }
+    body .main_nosotros .texto_nosotros p {
+      font-size: 25px; }
   body .main_nosotros .foto_nosotros {
     display: flex;
     justify-content: center;
@@ -204,7 +206,11 @@ body .main_nosotros {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 85vh 45vh;
-    grid-template-areas: "novedades" "calendario"; } }
+    grid-template-areas: "novedades" "calendario"; }
+  body .main_nosotros {
+    height: 100vh; }
+  body .foto_nosotros {
+    position: relative; } }
 
 /* DESKTOP FIRST */
 @media (max-width: 480px) {
