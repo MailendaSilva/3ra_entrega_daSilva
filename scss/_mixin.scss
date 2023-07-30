@@ -9,3 +9,11 @@
     justify-content: center;
     align-items: center;
 }
+@mixin titulos
+{
+    padding: 1rem;
+            grid-area: titulo_nosotros;
+            font-family: $textos;
+            font-size: 35px;
+            animation: movimientotitulos 2s 1;
+}

@@ -2,10 +2,11 @@ body
 {   
     main 
     {
-        h3 
+        #titulos
         {
-            font-family: $textos;
+            @include titulos;
             @include estilos_centrados;
+            
         }
         #galeria
         {
@@ -24,5 +25,16 @@ body
                 }
             }
         }
+        // CARRUSEL
+        #carouselExampleIndicators .carousel-inner .carousel-item img {
+            max-height: 500px; 
+            object-fit: cover; 
+        }
+
+        #carouselExampleIndicators {
+            max-height: 550px; 
+            overflow: hidden; 
+        }
+
     }
 }

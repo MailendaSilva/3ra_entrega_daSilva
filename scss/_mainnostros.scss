@@ -9,13 +9,11 @@ body
         grid-template-areas:
             "titulo_nosotros titulo_nosotros"
             "texto_nosotros foto_nosotros";
-        #titulo_nosotros
+        #titulos
         {
-            padding: 1rem;
-            grid-area: titulo_nosotros;
+            @include titulos;
             @include estilos_centrados;
-            font-family: $textos;
-            animation: movimientotitulos 2s 1;
+            
         }
         @keyframes movimientotitulos {
             from
