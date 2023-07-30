@@ -41,15 +41,22 @@ body
             }
 
         }
+        
         .foto_nosotros
         {
             @include estilos_centrados;
             grid-area: foto_nosotros;
-            &:hover
+            transition: transform 0.5s ease;
+            img 
             {
-                transform: scale(1.2);
-                transition: transform 0.3s ease;
+                width: 100%;
+                height: 100%;
             }
+            :hover
+            {
+                transform: scale(1.3);  
+            }
+            
         }
     }
 }

@@ -47,23 +47,25 @@ body
             }
         }
         
-        
-        .imagen_home
-        {
+        // ROTACION A IMG
+        .imagen_home {
             @include estilos_centrados;
             grid-area: imagen_home;
-            animation: spin 3s linear;
-        }
-        @keyframes spin 
-        {
-            0%{
-                transform: rotate(0deg); 
+            overflow: hidden;  
+        }       
+            img 
+            {
+                animation: spin 15s linear; 
             }
-            100% {
-                transform: rotate(360deg);
+          
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg); 
+                }
+                to {
+                    transform: rotate(1080deg); 
+                }
             }
-        }
-
         
     }
 }
