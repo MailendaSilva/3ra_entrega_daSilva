@@ -7,12 +7,11 @@
          // CONTACTO TABLET
          .seccion_contacto
          {
-             height: 140vh;
+             height: 190vh;
              display: grid;
              grid-template-columns: 100%;
-             grid-template-rows: 30vh 10vh 30vh 60vh;
+             grid-template-rows: 60vh 50vh 60vh;
              grid-template-areas:
-                 "datosformulario "
                  "datosformulario "
                  "motivo_contacto"
                  "mapa";
@@ -42,10 +41,12 @@
         .main_nosotros
         {
             height: 100vh;
-        }
+        
         .foto_nosotros
         {
-           position: relative;
+            height: 70%;
+            width: 100%;
+        }
         }
     }
 }

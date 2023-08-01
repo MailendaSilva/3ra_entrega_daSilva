@@ -24,6 +24,11 @@ body
                     border:5px solid #fff;
                 }
             }
+            .col-lg-6
+            {
+                margin: 0 !important;
+                padding: 25px;
+            }
         }
         // CARRUSEL
         #carouselExampleIndicators .carousel-inner .carousel-item img {
