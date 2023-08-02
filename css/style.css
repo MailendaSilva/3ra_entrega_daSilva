@@ -76,7 +76,7 @@ body .main_home {
     grid-area: imagen_home;
     overflow: hidden; }
   body .main_home img {
-    animation: spin 15s linear; }
+    animation: spin 10s linear; }
 
 @keyframes spin {
   from {
@@ -262,10 +262,10 @@ body .main_nosotros {
     body .footer .texto_footer {
       display: none; }
   body .seccion_contacto {
-    height: 160vh;
+    height: 180vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60vh 40vh 60vh;
+    grid-template-rows: 80vh 40vh 60vh;
     grid-template-areas: "datosformulario " "motivodecontacto" "mapa"; }
     body .seccion_contacto .datosformulario {
       justify-content: center; }
