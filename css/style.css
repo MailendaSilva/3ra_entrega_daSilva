@@ -154,6 +154,8 @@ body .main_novedades {
     grid-area: novedades;
     font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
     font-size: 20px; }
+  body .main_novedades h2 {
+    font-size: 25px; }
   body .main_novedades .calendario {
     background-image: url("../images/novedades_sanmartin.png");
     background-position: center center;
