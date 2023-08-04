@@ -54,7 +54,12 @@ body
             }
             :hover
             {
-                transform: scale(1.3);  
+                transform: scale(1.2);  
+                border:5px solid;
+                    border-left-color: rgb(189, 122, 252);
+                    border-top-color: rgb(241, 121, 231);
+                    border-right-color: rgb(108, 241, 103);
+                    border-bottom-color: rgb(226, 208, 43);
             }
             
         }
